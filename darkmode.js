@@ -1,0 +1,22 @@
+const body = document.querySelector(".inactive")
+const hoursBox = document.querySelector(".hours")
+const minsBox = document.querySelector(".minutes")
+const secsBox = document.querySelector(".seconds")
+const btn = document.querySelector(".dark-btn")
+const circle1 = document.querySelector(".circle1")
+const circle2 = document.querySelector(".circle2")
+const circle3 = document.querySelector(".circle3")
+const circle4 = document.querySelector(".circle4")
+
+btn.addEventListener("click", () => {
+    body.classList.toggle("active")
+    hoursBox.classList.toggle("hours-dark")
+    minsBox.classList.toggle("minutes-dark")
+    secsBox.classList.toggle("seconds-dark")
+    circle1.classList.toggle("circle1-dark")
+    circle2.classList.toggle("circle2-dark")
+    circle3.classList.toggle("circle3-dark")
+    circle4.classList.toggle("circle4-dark")
+    btn.classList.toggle("dark-btn-dark")
+})
+
